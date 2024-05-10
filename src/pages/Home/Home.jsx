@@ -1,9 +1,18 @@
 import React from 'react';
 import './Home.css'
+import Banner from './HomeComponent/Banner';
+import Mar from './HomeComponent/Mar';
+import Image from './HomeComponent/Image';
 
 const Home = () => {
     return (
         <div>
+
+            <div>
+                <Mar></Mar>
+                <Banner></Banner>
+                <Image></Image>
+            </div>
             <p className='text-center bg-red-500'>This is Home component</p>
 
             <div className="navbar bg-base-100">
@@ -54,6 +63,10 @@ const Home = () => {
                 <a href="#item2" className="btn btn-xs">2</a>
                 <a href="#item3" className="btn btn-xs">3</a>
                 <a href="#item4" className="btn btn-xs">4</a>
+            </div>
+
+            <div>
+                <button>Ok</button>
             </div>
 
         </div>
