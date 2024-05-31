@@ -1,9 +1,10 @@
 import React from 'react';
 import './Contact.css'
-
+import CounterApp from '../../Hooks/CounterApp';
+import AutoCountApp from '../../Hooks/AutoCountApp';
 const Contact = () => {
     return (
-        <div>
+        <div className='m-60'>
             <p className='text-center bg-yellow-500'>This is Contact component</p>
 
             <div className="navbar bg-base-100">
@@ -34,7 +35,12 @@ const Contact = () => {
                     </button>
                 </div>
             </div>
+
+            <CounterApp/>
+
+            <AutoCountApp/>
         </div>
+
     );
 };
 

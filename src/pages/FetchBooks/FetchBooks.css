@@ -1,0 +1,23 @@
+.books{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .books {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr) ;
+        gap: 40px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    .books {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        gap: 40px;
+    }
+}
+
